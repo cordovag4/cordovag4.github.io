@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fakebook Database</title>
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      color: white;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Gianna Cordova" width="80">
+        </figure>
+        <div class="info-content">
+          <h1 class="name" title="Gianna Cordova">Gianna Cordova</h1>
+          <p class="title">Computer Science Student</p>
+        </div>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:cordovag@umich.edu" class="contact-link">cordovag@umich.edu</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:+17346458881" class="contact-link">+1 (734) 645-8881</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Ann Arbor, Michigan, USA</address>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="main-content">
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a href="index.html#about" class="navbar-link">Home</a>
+          </li>
+          <li class="navbar-item">
+            <a href="index.html#resume" class="navbar-link">Resume</a>
+          </li>
+          <li class="navbar-item">
+            <a href="index.html#projects" class="navbar-link active">Projects</a>
+          </li>
+          <li class="navbar-item">
+            <a href="index.html#contact" class="navbar-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <article class="about active" id="projects">
+        <header>
+          <h2 class="h2 article-title">Fakebook Database</h2>
+        </header>
+
+        <section class="project-images">
+            <figure class="project-img">
+              <img src="./assets/images/project-3.png" alt="User profile layout" loading="lazy">
+            </figure>
+        </section>
+
+        <section class="about-text">
+            <p>
+                This project involved designing and querying a social network database modeled after Facebook, using MySQL and advanced SQL queries. The schema included users, friendships, posts, likes, tags, and other real-world social data relationships. A major focus was on writing efficient, multi-table joins and nested subqueries to extract meaningful insights, such as suggesting new friends, identifying photo trends, and analyzing user engagement across the platform.
+              </p>
+          </section>
+          
+          <section class="project-images">
+            <figure class="project-img">
+              <img src="./assets/images/instagram-clone-1.png" alt="Feed view with like and comment options" loading="lazy">
+            </figure>
+          </section>
+          
+          <section class="about-text">
+            <p>
+                The project emphasized data modeling and relational algebra, with careful normalization and key constraints to ensure referential integrity. Additionally, performance was a core concern—optimizing queries to run efficiently on large datasets was crucial. Through this work, I developed a strong understanding of SQL logic, relational design patterns, and best practices for constructing scalable, queryable backends in real-world applications.
+            </p>
+          </section>
+          
+
+        <a href="index.html#projects" class="back-link">&larr; Back to Projects</a>
+      </article>
+    </div>
+  </main>
+
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
